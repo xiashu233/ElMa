@@ -1,0 +1,90 @@
+.section_logoBox{
+	
+}
+.section_logo{
+	width: 100%;
+	height: auto;
+}
+.section_gnq {
+	width: 20%;
+	margin: 9% auto;
+}
+
+.section_btnBox {
+	margin-bottom: 10px;
+}
+
+.section_btn {
+	font-family: 幼圆;
+	width: 100%;
+	height: 30px;
+	font-size: 22px;
+	/* size: 65; */
+	border: none;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.section_submit {
+	font-family: "Arial", "Tahoma", "微软雅黑", "雅黑";
+	border: 0;
+	vertical-align: middle;
+	color: white;
+	line-height: 40px;
+	font-size: 18px;
+	width: 100%;
+	border-radius: 15px;
+	background-color: #00a6ff;
+	margin-bottom: 10px;
+}
+
+.section_yzmDingWei {
+	position: relative;
+}
+
+.section_getYzm {
+	text-align: center;
+	border: 1px solid #7fd2ff;
+	line-height: 30px;
+	border-radius: 10px;
+	width: 80px;
+	position: absolute;
+	bottom: 0%;
+	left: 80%;
+
+}
+
+.section_getYzm_a {
+
+	color: #7fd2ff;
+	font-size: 15px;
+}
+
+.section_TS {
+	color: #cecece;
+	font-size: 14px;
+}
+
+.section_TS_a {
+	color: #00a6ff;
+
+}
+
+.section_TS_a:hover {
+	text-decoration: underline;
+}
+
+
+.footer_texts{
+	text-align: center;
+	background-color: #f5f5f5;
+	height: 20%;
+}
+
+.footer_text1{
+	line-height: 50px;
+}
+
+.footer_text2{
+	line-height: 50px;
+	color: #999999;
+}
