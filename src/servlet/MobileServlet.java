@@ -6,16 +6,25 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
-@WebServlet("MobileServlet")
+@WebServlet(name= "MobileServlet",value="/MobileServlet")
 
 public class MobileServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         doGet(request,response);
-        request.getParameter("mobile");
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
+        response.setCharacterEncoding("utf-8");
+        response.setContentType("text/html; charset=UTF-8");
+
+        String mobile = request.getParameter("mobile");
+        PrintWriter out = response.getWriter();
+        out.write("1234");
+        out.close();
     }
 }

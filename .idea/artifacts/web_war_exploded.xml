@@ -4,9 +4,7 @@
     <root id="root">
       <element id="javaee-facet-resources" facet="ElMa/web/Web" />
       <element id="directory" name="WEB-INF">
-        <element id="directory" name="classes">
-          <element id="module-output" name="ElMa" />
-        </element>
+        <element id="directory" name="classes" />
       </element>
     </root>
   </artifact>

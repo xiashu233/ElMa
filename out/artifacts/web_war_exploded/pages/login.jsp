@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -37,7 +38,7 @@
                 <div class="section_btnBox section_yzmDingWei">
                     <input class="section_btn" type="text" name="" id="userYZM" placeholder="请输入验证码" />
                     <div class="section_getYzm">
-                        <a class="section_getYzm_a" href="#" id="yzm" >获取验证码</a>
+                        <a class="section_getYzm_a" href="#" id="yzm" onclick="register()" >获取验证码</a>
                     </div>
                 </div>
                 <button class="section_submit" type="submit">登录</button>
