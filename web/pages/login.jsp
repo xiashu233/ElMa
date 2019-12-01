@@ -26,7 +26,6 @@
 <%--  主体  --%>
 <section id="section">
     <div>
-
         <form action="" method="post">
             <div class="section_gnq">
                 <div class="section_logoBox">
