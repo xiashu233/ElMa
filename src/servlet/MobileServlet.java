@@ -1,5 +1,7 @@
 package servlet;
 
+import util.SMS;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -23,7 +25,10 @@ public class MobileServlet extends HttpServlet {
 
         String mobile = request.getParameter("mobile");
         PrintWriter out = response.getWriter();
-        out.write("1234");
+
+        SMS.Texting(mobile);
+        System.out.println(SMS.yzm);
+        out.write(SMS.yzm);
         out.close();
     }
 }

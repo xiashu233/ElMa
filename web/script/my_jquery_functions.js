@@ -18,11 +18,11 @@ $(document).ready(function(){
                 type:"post",
                 data:"mobile="+$phone,
                 success:function (result) {
-                    if (result == "1234"){
-                        alert("验证码为：" + result);
-                    }else{
-                        alert("发生了不可描述的错误");
-                    }
+                    // alert(result);
+                    $("#hdyzm").val(result);
+
+                    // 此时代表 发送验证码成功 可以做一些其他操作 比如 进行计时发送下次验证码
+
                 },
                 error:function () {
                     alert("系统异常!");
@@ -38,6 +38,18 @@ $(document).ready(function(){
 
     });
 });
+
+function checkBeforeSubmit() {
+    var $userYZM = $("#userYZM").val();
+    var $hdzym = $("#hdyzm").val();
+    if ($userYZM == $hdzym){
+        alert("登录成功");
+        return true;
+    }else{
+        alert("登录失败");
+        return false;
+    }
+}
 
 // function register()
 // {
