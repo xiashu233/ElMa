@@ -25,7 +25,9 @@
 
 <%--  主体  --%>
 <section id="section">
+    <%--  存放回调验证码以及绑定手机号  --%>
     <input type="hidden" id="hdyzm" value="">
+    <input type="hidden" id="hdphone" value="">
     <div>
         <form action="" onsubmit="return checkBeforeSubmit()" method="post">
             <div class="section_gnq">
@@ -38,7 +40,10 @@
                 <div class="section_btnBox section_yzmDingWei">
                     <input class="section_btn" type="text" name="" id="userYZM" placeholder="请输入验证码" />
                     <div class="section_getYzm">
-                        <a class="section_getYzm_a" href="#" id="yzm"  >获取验证码</a>
+                        <a class="section_getYzm_a" href="#" id="yzm"  >
+                            <p id="section_getYzm_hq">获取验证码</p>
+                            <p id="section_getYzm_dd" style="display: none"><span id="section_getYzm_dddjs">60</span><span>s后获取</span></p>
+                        </a>
                     </div>
                 </div>
                 <button class="section_submit" type="submit">登录</button>
