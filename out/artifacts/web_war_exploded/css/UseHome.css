@@ -1,0 +1,153 @@
+#header{
+	width: 100%;
+	height: auto;
+	background-color: #1e89e0;
+
+}
+
+.header_content{
+	width: 70%;
+	margin: 0px auto;
+	height: 70px;
+	line-height: 70px;
+	
+}
+
+.header_logobox{
+	height: 70px;
+	width: 250px;
+}
+
+.header_logo{
+	width: auto;
+	height: 60px;
+}
+.header_nav{
+	width: 100%;
+	text-align: center;
+}
+
+.header_nav li{
+	width: 25%;
+}
+
+.header_nav li:hover{
+	background-color: #0378dd;
+}
+
+.header_navItem{
+	font-size: 20px;
+	color: white;
+}
+
+.header_userInfo{
+	color: white;
+	text-align: center;
+	width: 25%;
+	position: relative;
+}
+
+.header_userInfotext{
+	color: white;
+}
+
+.header_user_a{
+	color: white;
+}
+.header_userMenu{
+	z-index: 10;
+	position: absolute;
+	left: 40%;
+	bottom: -130%;
+	display: none;
+}
+.asd{
+	/* display: none; */
+	visibility: hidden;
+	color: black;
+}
+.header_userInfotext:hover .asd{
+	/* display: block; */
+	visibility: visible;
+}
+#section{
+	background-color: #f7f7f7;
+}
+
+.section_MapAndSearch{
+	font-size: 12px;
+	height: 50px;
+	line-height: 50px;
+}
+.SwitchAddress{
+	color: #0089DC;
+}
+.section_Search{
+	text-align: right;
+}
+
+.section_conten{
+	width: 70%;
+	margin: 0px auto;
+}
+.section_SearchTxt{
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.section_SearchBtn{
+	width: 20px;
+	height: 20px;
+}
+
+.section_waimaiBox{
+	margin-top: 10px;
+	text-align: right;
+}
+
+.section_merchantNavTitle{
+	text-align: center;
+}
+
+.section_merchant{
+	border: 1px solid #e6e6e6;
+	height: 40px;
+	line-height: 40px;
+	background-color: white;
+}
+
+.section_merchantNav li{
+	text-align: center;
+	width: 10%;
+	border-radius: 5px;
+}
+
+.section_merchantNav li:hover{
+	background-color: #f6f6f6;
+	
+}
+
+.section_merchanfocus{
+	background-color: #0089dc;
+}
+
+.section_merchanfocus a{
+	color: white;
+}
+
+.section_merchantOrFood{
+	border: 1px solid #e6e6e6;
+	margin-top: 10px;
+	flex-flow: row wrap;
+	background-color: white;
+}
+
+.section_merchantItem{
+	width: 250px;
+	height: 100px;
+	padding: 20px;
+}
+
+.section_merchantItem:hover{
+	background-color: #f5f5f5;
+}
