@@ -108,24 +108,45 @@
             </ul>
             <span class="cell_2"></span>
         </div>
+
         <div class="container section_merchantOrFood">
 
-            <script type="text/javascript">
-                for (var i = 1; i < 10; i++) {
-                    document.write("<a href='#'><div class='section_merchantItem container'><div><img src='<%= path %>/images/MerchantStatue/zhoudao.jpeg'></img></div><div><p class='merchantTitle'>店铺名</p><p><span></span></p><p class='merchantPSPrice'>配送费￥<span></span></p></div></div></a>")
-
+            <%--  jsp方式显示数据（从数据库查询显示）  --%>
+            <%
+                for (int i = 1; i < 9; i++) {
+            %>
+            <a href='#'>
+                <div class='section_merchantItem container'>
+                    <div>
+                        <img src='<%= path %>/images/MerchantStatue/zhoudao.jpeg'>
+                    </div>
+                    <div>
+                        <p class='merchantTitle'>店铺名</p>
+                        <p>
+                            <span></span>
+                        </p>
+                        <p class='merchantPSPrice'>
+                            <span>配送费￥</span>
+                            <span></span>
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <%
                 }
-            </script>
+            %>
+
+                <%--   js方式显示数据   --%>
+                <%--<script type="text/javascript">--%>
+                <%--for (var i = 1; i < 10; i++) {--%>
+                <%--   document.write("<a href='#'><div class='section_merchantItem container'><div><img src='<%= path %>/images/MerchantStatue/zhoudao.jpeg'></img></div><div><p class='merchantTitle'>店铺名</p><p><span></span></p><p class='merchantPSPrice'>配送费￥<span></span></p></div></div></a>")--%>
+
+                <%--}--%>
+                <%--</script>--%>
         </div>
     </div>
 </section>
 
-<footer id="footer">
-    <div class="footer_texts">
-        <p class="footer_text1">所有方：六安莫德甘青信息科技有限公司</p>
-        <p class="footer_text2" >增值电信业务许可证 :沪B2-20150033沪ICP备 09007032上海工商行政管理Copyright ©2008-2019 ele.me, All Rights Reserved.</p>
-        <img src="../images/wangBei.png" >
-    </div>
-</footer>
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
