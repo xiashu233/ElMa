@@ -53,7 +53,7 @@
 						<span>
 							123
 						</span>
-                <a href="# " class="header_user_a">
+                <a href="#" class="header_user_a">
                     <span class="iconfont icon-yonghu"></span>
                 </a>
             </p>
