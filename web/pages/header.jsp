@@ -1,5 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <header id="header">
+
+    <div>
+        
+    </div>
+
     <div class="header_content container">
         <div class="header_logobox">
             <img class="header_logo" src="../images/logoSuo.png">
@@ -33,7 +38,7 @@
         <div class="header_userInfo">
             <p class="header_userInfotext">
 						<span>
-							123
+							123456789
 						</span>
                 <a href="#" class="header_user_a">
                     <span class="iconfont icon-yonghu"></span>
@@ -47,7 +52,7 @@
                     <li><a href="#">退出登录</a></li>
                 </ul>
             </div>
-            <p class="userPhone">123456789</p>
+            <p class="userPhone"></p>
         </div>
     </div>
 </header>

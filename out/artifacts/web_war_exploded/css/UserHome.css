@@ -2,7 +2,38 @@
 	width: 100%;
 	height: auto;
 	background-color: #1e89e0;
+	position: relative;
+}
 
+.Sidebar{
+	height: 100%;
+	z-index: 10;
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	text-align: center;
+
+}
+
+.Sidebar p{
+	color: white;
+}
+
+.Sidebar_left{
+	background-color: #504d53;
+}
+
+.Sidebar_leftText{
+	margin-top: 20px;
+}
+
+.iconStyle{
+	font-size: 50px;
+	/* color: white; */
+}
+
+.Sidebar_topSpace{
+	height: 30%;
 }
 
 .header_content{
@@ -10,7 +41,7 @@
 	margin: 0px auto;
 	height: 70px;
 	line-height: 70px;
-	
+
 }
 
 .header_logobox{
@@ -124,7 +155,7 @@
 
 .section_merchantNav li:hover{
 	background-color: #f6f6f6;
-	
+
 }
 
 .section_merchanfocus{
@@ -150,4 +181,8 @@
 
 .section_merchantItem:hover{
 	background-color: #f5f5f5;
+}
+
+.Sidebar_Info div{
+	display: none;
 }

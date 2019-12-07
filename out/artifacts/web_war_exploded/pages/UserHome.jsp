@@ -14,11 +14,49 @@
     <link rel="stylesheet" type="text/css" href="<%= path %>/fonts/iconfont.css" />
     <link rel="stylesheet" type="text/css" href="<%= path %>/css/merchantInfo.css"/>
     <link rel="stylesheet" type="text/css" href="<%= path %>/css/login.css"/>
+
+    <script src="<%= path %>/js/Sidebar.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
 
 <section id="section">
+    <div id="Sidebar" class="Sidebar container">
+        <div id="Sidebar_left" class="Sidebar_left cell_1">
+            <div class="Sidebar_topSpace"></div>
+            <a href="#" onclick="changeItem(0)">
+                <p class="Sidebar_leftText">
+                    <span class="iconfont icon-dingdan iconStyle"></span>
+                </p>
+            </a>
+            <hr >
+            <a href="#" onclick="changeItem(1)">
+                <p class="Sidebar_leftText">
+                    <span class="iconfont icon-gouwuche iconStyle"></span>
+                </p>
+                <p>购</p>
+                <p>物</p>
+                <p>车</p>
+            </a>
+            <hr >
+            <a href="#" onclick="changeItem(2)">
+                <p class="Sidebar_leftText">
+                    <span class="iconfont icon-xinxi iconStyle"></span>
+                </p>
+            </a>
+        </div>
+        <div id="Sidebar_InfoID" class="cell_6 Sidebar_Info">
+            <div >
+                订单信息
+            </div>
+            <div >
+                购物车信息
+            </div>
+            <div >
+                系统消息
+            </div>
+        </div>
+    </div>
     <div class="section_conten">
         <div class="section_MapAndSearch container">
             <div class="section_Map cell_1">
@@ -30,13 +68,13 @@
             <div class="section_Search cell_1">
                 <form action="" method="get">
                     <input type="text" id="" value="" class="section_SearchTxt" />
-                    <input type="image" src="<%= path %>/images/search.png" class="section_SearchBtn" />
+                    <input type="image" src="../images/search.png" class="section_SearchBtn" />
                 </form>
             </div>
 
         </div>
         <div class="section_waimaiBox">
-            <a href="#"><img src="<%= path %>/images/waimai.png" ></a>
+            <a href="#"><img src="../images/waimai.png" ></a>
         </div>
         <div class="section_merchant container">
             <span class="section_merchantNavTitle cell_1">商家分类：</span>
@@ -56,7 +94,6 @@
             </ul>
             <span class="cell_2"></span>
         </div>
-
         <div class="container section_merchantOrFood">
 
             <%--  jsp方式显示数据（从数据库查询显示）  --%>
@@ -84,13 +121,13 @@
                 }
             %>
 
-                <%--   js方式显示数据   --%>
-                <%--<script type="text/javascript">--%>
-                <%--for (var i = 1; i < 10; i++) {--%>
-                <%--   document.write("<a href='#'><div class='section_merchantItem container'><div><img src='<%= path %>/images/MerchantStatue/zhoudao.jpeg'></img></div><div><p class='merchantTitle'>店铺名</p><p><span></span></p><p class='merchantPSPrice'>配送费￥<span></span></p></div></div></a>")--%>
+            <%--   js方式显示数据   --%>
+            <%--<script type="text/javascript">--%>
+            <%--for (var i = 1; i < 10; i++) {--%>
+            <%--   document.write("<a href='#'><div class='section_merchantItem container'><div><img src='<%= path %>/images/MerchantStatue/zhoudao.jpeg'></img></div><div><p class='merchantTitle'>店铺名</p><p><span></span></p><p class='merchantPSPrice'>配送费￥<span></span></p></div></div></a>")--%>
 
-                <%--}--%>
-                <%--</script>--%>
+            <%--}--%>
+            <%--</script>--%>
         </div>
     </div>
 </section>

@@ -15,7 +15,7 @@
     <link href="<%= path %>/css/goble.css" rel="stylesheet" type="text/css" />
 
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-    <script src="<%= path %>/script/my_jquery_functions.js"></script>
+    <script src="<%= path %>/js/my_jquery_functions.js"></script>
 </head>
 <body>
 <%--  主体  --%>
