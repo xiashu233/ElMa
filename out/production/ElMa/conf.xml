@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 此时我们可以将数据库配置单独提出来 写成一个 db.properties 文件 稍后呈现 -->
+    <properties resource="db.properties" />
+
+    <typeAliases>
+        <!-- 批量定义别名，以下会自动将该包下面的 类 的 别名 全部变成该类名   同时不区分大小写 -->
+        <package name="entity"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="mapper/takeawayMapper.xml"/>
+    </mappers>
+</configuration>
