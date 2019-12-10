@@ -29,16 +29,16 @@
     <input type="hidden" id="hdyzm" value="">
     <input type="hidden" id="hdphone" value="">
     <div>
-        <form action="" onsubmit="return checkBeforeSubmit()" method="post">
+        <form action="LoginServlet" onsubmit="return checkBeforeSubmit()" method="post">
             <div class="section_gnq">
                 <div class="section_logoBox">
                     <img class="section_logo" src="<%= path %>/images/L.png" >
                 </div>
                 <div class="section_btnBox">
-                    <input class="section_btn" type="text" name="" id="userPhone" placeholder="请输入手机号"/>
+                    <input class="section_btn" type="text" name="usPhone" id="userPhone" placeholder="请输入手机号"/>
                 </div>
                 <div class="section_btnBox section_yzmDingWei">
-                    <input class="section_btn" type="text" name="" id="userYZM" placeholder="请输入验证码" />
+                    <input class="section_btn" type="text" name="usYZM" id="userYZM" placeholder="请输入验证码" />
                     <div class="section_getYzm">
                         <a class="section_getYzm_a" href="#" id="yzm"  >
                             <p id="section_getYzm_hq">获取验证码</p>

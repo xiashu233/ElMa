@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 
         if (ret.test($phone)){
-            alert("手机号合法，可以进行Ajax请求");
+            // alert("手机号合法，可以进行Ajax请求");
             $.ajax({
                 // url:服务器地址,
                 // 请求方式: get|post,
@@ -58,10 +58,10 @@ function checkBeforeSubmit() {
     var $hdzym = $("#hdyzm").val();
     // alert($hdphone);
     if ($userYZM == $hdzym && $userPhone == $hdphone){
-        alert("登录成功");
+
         return true;
     }else{
-        alert("登录失败");
+        alert("登录失败，请检查是否临时更改了手机号或验证码输入错误！");
         return false;
     }
 };

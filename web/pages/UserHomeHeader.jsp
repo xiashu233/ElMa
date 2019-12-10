@@ -1,9 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<header id="header">
 
-    <div>
-        
-    </div>
+<%
+    String path = request.getContextPath();
+%>
+
+<link rel="stylesheet" type="text/css" href="<%= path %>/css/UserHome.css" />
+
+
+<header id="header">
 
     <div class="header_content container">
         <div class="header_logobox">
@@ -37,8 +41,8 @@
         </ul>
         <div class="header_userInfo">
             <p class="header_userInfotext">
-						<span>
-							123456789
+						<span id="usPhone">
+                            ${requestScope.usPhone}
 						</span>
                 <a href="#" class="header_user_a">
                     <span class="iconfont icon-yonghu"></span>
@@ -52,7 +56,7 @@
                     <li><a href="#">退出登录</a></li>
                 </ul>
             </div>
-            <p class="userPhone"></p>
+            <p class="asd">123</p>
         </div>
     </div>
 </header>

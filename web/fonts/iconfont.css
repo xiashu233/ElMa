@@ -9,7 +9,7 @@
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 16px;
+  font-size: 26px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,7 +27,7 @@
   content: "\e643";
 }
 
-.icon-qicheqianlian-:before {
+.icon-gouwuche:before {
   content: "\e618";
 }
 
