@@ -4,24 +4,36 @@ public class Business {
 
     private String bnsPhone;
     private String bnsName;
+    private String bnsType;
     private String bnsImagePath;
     private String bnsAddress;
     private String bnsAnnouncement;
     private Double bnsStartPrice;
-    private String bnsDeliveryPrice;
+    private Double bnsDeliveryPrice;
     private Double bnsScore;
+
 
     public Business() {
     }
 
-    public Business(String bnsPhone, String bnsName, String bnsImagePath, String bnsAddress, String bnsAnnouncement, Double bnsStartPrice, String bnsDeliveryPrice) {
+    public Business(String bnsPhone, String bnsName, String bnsType, String bnsImagePath, String bnsAddress, String bnsAnnouncement, Double bnsStartPrice, Double bnsDeliveryPrice, Double bnsScore) {
         this.bnsPhone = bnsPhone;
         this.bnsName = bnsName;
+        this.bnsType = bnsType;
         this.bnsImagePath = bnsImagePath;
         this.bnsAddress = bnsAddress;
         this.bnsAnnouncement = bnsAnnouncement;
         this.bnsStartPrice = bnsStartPrice;
         this.bnsDeliveryPrice = bnsDeliveryPrice;
+        this.bnsScore = bnsScore;
+    }
+
+    public String getBnsType() {
+        return bnsType;
+    }
+
+    public void setBnsType(String bnsType) {
+        this.bnsType = bnsType;
     }
 
     public String getBnsPhone() {
@@ -72,11 +84,11 @@ public class Business {
         this.bnsStartPrice = bnsStartPrice;
     }
 
-    public String getBnsDeliveryPrice() {
+    public Double getBnsDeliveryPrice() {
         return bnsDeliveryPrice;
     }
 
-    public void setBnsDeliveryPrice(String bnsDeliveryPrice) {
+    public void setBnsDeliveryPrice(Double bnsDeliveryPrice) {
         this.bnsDeliveryPrice = bnsDeliveryPrice;
     }
 

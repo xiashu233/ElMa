@@ -4,4 +4,7 @@ package mapper;
 public interface takeawayMapper {
 
     int selectUserCount();
+    int selectUserByUsers(String phone);
+    void insertUser(String phone);
+    int selectUserType(String phone);
 }

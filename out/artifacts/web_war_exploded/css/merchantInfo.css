@@ -1,0 +1,149 @@
+.show {
+    display: block;
+}
+
+.hideen {
+    display: none;
+}
+
+#Favorite {
+    width: 80px;
+    height: 60%;
+    text-align: center;
+    background-color: #C7C7C7;
+    color: white;
+}
+
+#section {
+    position: relative;
+}
+
+.section_seach {
+    line-height: 50px;
+}
+
+.merchantInfo_title_Name {
+    line-height: 100px;
+    color: #666666;
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+.merchantInfo_title_right_Item {
+    text-align: center;
+    width: 100px;
+    margin-top: 30px;
+    line-height: 20px;
+}
+
+.section_conten_Top {
+    padding: 20px;
+    background-color: white;
+
+}
+
+.section_conten_left {
+    width: 200px;
+    border: 1px solid black;
+}
+
+.section_conten_center {
+    margin: 20px;
+    width: 900px;
+    border: 1px solid black;
+}
+
+.section_conten_center span {
+    display: block;
+    width: 120px;
+    color: #666666;
+}
+
+.section_conten_center span.on {
+    background-color: #0089dc;
+    color: white;
+}
+
+.section_conten {
+
+    background-color: #f7f7f7;
+}
+
+.gonggao_title {
+    background: #0089dc;
+    color: white;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.gonggao_conten {
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.section_conten_shangjiagonggao {
+    margin: 10px;
+}
+.FoodItems{
+    flex-flow: row wrap;
+}
+
+.FoodItem{
+    width: 400px;
+    position: relative;
+    /* border: 1px solid black; */
+    text-align: left;
+    background-color: white;
+    margin: 10px;
+}
+
+.FoodItem div{
+    float: left;
+}
+
+span.AddItem{
+    color: white;
+    background-color: #0089dc;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0%;
+    left: 60%;
+}
+
+.FoodItem_texts{
+    margin: 10px;
+    /* text-align: left; */
+}
+
+.FoodItem_texts p{
+    line-height: 25px;
+}
+
+.FoodItem_imgBox{
+    width: 100px;
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+.FoodPrice{
+    color: red;
+}
+
+
+
+.sectionLeft_List{
+    text-align: right;
+}
+
+.sectionLeft_List li{
+    height: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.section_conten_peisong{
+    padding: 20px;
+}
