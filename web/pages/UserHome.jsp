@@ -1,3 +1,5 @@
+<%@ page import="entity.Business" %>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String path = request.getContextPath();
@@ -16,6 +18,9 @@
 
 </head>
 <body>
+<%
+    List<Business> businesses = (List<Business>) request.getAttribute("businesses");
+%>
 <jsp:include page="UserHomeHeader.jsp"></jsp:include>
 
 <jsp:include page="UserHomeSection.jsp"></jsp:include>

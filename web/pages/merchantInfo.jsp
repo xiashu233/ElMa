@@ -18,9 +18,11 @@
 
 </head>
 <body>
+<% Business business = (Business) request.getAttribute("business"); %>
     <jsp:include page="UserHomeHeader.jsp"></jsp:include>
 
-    <% Business business = (Business) request.getAttribute("business"); %>
+
+
     <section id="section">
         <div class="section_conten">
             <div class="merchantInfo_title container">
@@ -99,7 +101,7 @@
                         <div class="container FoodItems">
                             <div class="FoodItem">
                                 <div class="FoodItem_imgBox">
-                                    <img src="<%= path %>/images/回头客餐厅/2a26e19a59eb9d9d61af45bfd8926jpeg.jpeg" >
+                                    <img src="<%= path %>/images/huitouke/2a26e19a59eb9d9d61af45bfd8926jpeg.jpeg" >
                                 </div>
                                 <div class="FoodItem_texts">
                                     <h3>菜品名称</h3>
@@ -114,7 +116,7 @@
                             </div>
                             <div class="FoodItem">
                                 <div class="FoodItem_imgBox">
-                                    <img src="<%= path %>/images/回头客餐厅/2a138f014ac43fc4e2f023996f026jpeg.jpeg" >
+                                    <img src="<%= path %>/images/huitouke/2a138f014ac43fc4e2f023996f026jpeg.jpeg" >
                                 </div>
                                 <div class="FoodItem_texts">
                                     <h3>菜品名称</h3>
@@ -129,7 +131,7 @@
                             </div>
                             <div class="FoodItem">
                                 <div class="FoodItem_imgBox">
-                                    <img src="<%= path %>/images/回头客餐厅/2a138f014ac43fc4e2f023996f026jpeg.jpeg" >
+                                    <img src="<%= path %>/images/huitouke/2a138f014ac43fc4e2f023996f026jpeg.jpeg" >
                                 </div>
                                 <div class="FoodItem_texts">
                                     <h3>菜品名称</h3>
@@ -144,7 +146,7 @@
                             </div>
                             <div class="FoodItem">
                                 <div class="FoodItem_imgBox">
-                                    <img src="<%= path %>/images/回头客餐厅/2a138f014ac43fc4e2f023996f026jpeg.jpeg" >
+                                    <img src="<%= path %>/images/huitouke/2a138f014ac43fc4e2f023996f026jpeg.jpeg" >
                                 </div>
                                 <div class="FoodItem_texts">
                                     <h3>菜品名称</h3>
@@ -167,10 +169,8 @@
                     <div class="section_conten_shangjiagonggao">
                         <p class="gonggao_title">商家公告</p>
                         <div class="gonggao_conten">
-                            <p>终风且暴，顾我则笑，谑浪笑敖，中心是悼。
-                                终风且霾，惠然肯来，莫往莫来，悠悠我思。
-                                终风且曀，不日有曀，寤言不寐，愿言则嚏。
-                                曀曀其阴，虺虺其雷，寤言不寐，愿言则怀。
+                            <p>
+                                <%= business.getBnsAnnouncement() %>
                             </p>
                         </div>
                     </div>
@@ -185,3 +185,4 @@
     </section>
 </body>
 </html>
+<script src="<%= path %>/js/merchantInfo.js" type="text/javascript" charset="utf-8"></script>

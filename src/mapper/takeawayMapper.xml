@@ -18,6 +18,11 @@
         SELECT * FROM businessdetails
     </select>
 
+    <!--  根据商户手机号查询到这个商户的信息  -->
+    <select id="selectBusinessByPhone" parameterType="String" resultType="Business">
+        SELECT * from businessdetails WHERE BnsPhone = #{phone}
+    </select>
+
     <!--  查询用户表里是否有该人  -->
     <select id="selectUserByUsers" parameterType="String" resultType="INTEGER">
        SELECT COUNT(*) FROM users where phone =  #{phone}

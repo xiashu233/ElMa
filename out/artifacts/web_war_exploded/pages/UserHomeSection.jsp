@@ -1,3 +1,5 @@
+<%@ page import="java.util.List" %>
+<%@ page import="entity.Business" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page pageEncoding="UTF-8"%>
 
@@ -6,7 +8,9 @@
 %>
 
 <link rel="stylesheet" type="text/css" href="<%= path %>/fonts/iconfont.css" />
-
+<%
+    List<Business> businesses = (List<Business>) request.getAttribute("businesses");
+%>
 <section id="section">
     <div id="Sidebar" class="Sidebar container">
         <div id="Sidebar_left" class="Sidebar_left cell_1">
@@ -88,21 +92,22 @@
 
             <%--  jsp方式显示数据（从数据库查询显示）  --%>
             <%
-                for (int i = 1; i < 9; i++) {
+                for (int i = 0; i < businesses.size(); i++) {
+                    Business bnsItem = businesses.get(i);
             %>
-            <a href='<%= path %>/FoodInfoServlet?foodId=<%= i %>'>
+            <a href='<%= path %>/FoodInfoServlet?bnsPhone=<%= bnsItem.getBnsPhone() %>&usPhone=${requestScope.usPhone}'>
                 <div class='section_merchantItem container'>
                     <div>
-                        <img src='<%= path %>/images/MerchantStatue/zhoudao.jpeg'>
+                        <img src='<%= path + bnsItem.getBnsImagePath() %>'>
                     </div>
                     <div>
-                        <p class='merchantTitle'>店铺名</p>
+                        <p class='merchantTitle'><%= bnsItem.getBnsName() %></p>
                         <p>
                             <span></span>
                         </p>
                         <p class='merchantPSPrice'>
                             <span>配送费￥</span>
-                            <span></span>
+                            <span><%= bnsItem.getBnsDeliveryPrice() %></span>
                         </p>
                     </div>
                 </div>

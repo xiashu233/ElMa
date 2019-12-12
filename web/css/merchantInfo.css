@@ -21,6 +21,13 @@
 .section_seach {
     line-height: 50px;
 }
+.merchantInfo_title_imgBox{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 3px solid #9a9a9a;
+    border-radius: 55px;
+}
 
 .merchantInfo_title_Name {
     line-height: 100px;
@@ -90,7 +97,7 @@
 }
 
 .FoodItem{
-    width: 400px;
+    width: 360px;
     position: relative;
     /* border: 1px solid black; */
     text-align: left;

@@ -1,5 +1,6 @@
 package servlet;
 
+import entity.Business;
 import mapper.takeawayMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -13,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.Reader;
+import java.util.List;
 
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
@@ -38,8 +40,13 @@ public class LoginServlet extends HttpServlet {
 
         request.setAttribute("usPhone",usPhone);
         System.out.println(usPhone);
-        if(takeawayMapper.selectUserType(usPhone) == 0)
+        if(takeawayMapper.selectUserType(usPhone) == 0){
+            List<Business> businesses = takeawayMapper.selectAllBusiness();
+            request.setAttribute("businesses",businesses);
             request.getRequestDispatcher("/pages/UserHome.jsp").forward(request, response);
+
+        }
+
 
         session.close();
     }
